@@ -30,8 +30,8 @@ namespace MuscleTrainingRecords00
             var M_weight = m_weightEntry.Text;
             var leg = LegEntry.Text;
             var Set = SetEntry.Text;
-            var yyyymmdd = m_date.Text;
-            RecordsModel.InsertRecords(M_weight, leg, Set, yyyymmdd);//試し
+            //var yyyymmdd = m_date.Text;
+            RecordsModel.InsertRecords(M_weight, leg, Set);//試し
 
             /* var InsertName = insertEntry.Text;
              RecordsModel.insertRecords(InsertName); */
