@@ -13,7 +13,7 @@ namespace MuscleTrainingRecords00
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecordPage : ContentPage
     {
-        int M_weight;
+        int weight;
         DateTime yyyymmdd;
         private Entry insertEntry;
 
@@ -25,7 +25,7 @@ namespace MuscleTrainingRecords00
         void Button_Clicked(object sender, EventArgs e)
         {
             var InsertName = insertEntry.Text;
-            RecordsModel.InsertRecords(M_weight);//試し
+            RecordsModel.InsertRecords(weight);//試し
 
   /*var InsertName = insertEntry.Text;
   RecordsModel.insertRecords(InsertName); */
