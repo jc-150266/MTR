@@ -18,6 +18,7 @@ namespace MuscleTrainingRecords00
         private Entry SetEntry;
         private Entry m_date;
         DateTime yyyymmdd;
+        private Entry insertEntry;
 
         public RecordPage()
         {
@@ -31,9 +32,9 @@ namespace MuscleTrainingRecords00
             var M_leg = LegEntry.Text;
             var M_set = SetEntry.Text;
             //var yyyymmdd = m_date.Text;
-            RecordsModel.InsertRecords(M_weight, M_leg, M_set);//試し
+            RecordsModel.InsertRecords(Insertm_weight, Insertm_leg, InsertM_set);//試し
 
-            /* var InsertName = insertEntry.Text;
+             /*var InsertName = insertEntry.Text;
              RecordsModel.insertRecords(InsertName); */
             DisplayAlert("", "保存されました", "OK");
 
