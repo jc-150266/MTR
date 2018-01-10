@@ -41,4 +41,5 @@ namespace MuscleTrainingRecords00
             Navigation.PushAsync(new RecordListPage());
         }
     }
+
 }
