@@ -6,16 +6,13 @@
         <StackLayout Orientation="Vertical"
                  Spacing="50">
 
-            <!--= <StackLayout Orientation="Horizontal">
-            
-            <Button Text="記録"
-                    Clicked="Button_Clicked"
-                    FontSize="15"/>
-            <Button Text="保存" 
+            <StackLayout Orientation="Horizontal">
+
+                <Button Text="保存" 
                     Clicked="Button_Clicked"
                     HorizontalOptions="EndAndExpand"
                     FontSize="15"/>
-        </StackLayout> -->
+            </StackLayout>
 
             <Label x:Name="label1"
                Text=" "
@@ -70,7 +67,8 @@
                 <Entry HorizontalOptions="End"
                    WidthRequest="130"
                    HeightRequest="15"
-                   Keyboard ="Numeric"/>
+                   Keyboard ="Numeric"
+                       x:Name="leg"/>
 
             </StackLayout>
 

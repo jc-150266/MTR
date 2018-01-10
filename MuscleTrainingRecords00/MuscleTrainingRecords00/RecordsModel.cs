@@ -26,7 +26,7 @@ namespace MuscleTrainingRecords00
         // public int Set_no { get; set; } //Setting表の外部キー
 
         /********************インサートメソッド**********************/
-        public static void InsertFood(int m_no, int m_weight, int m_leg, int m_set, DateTime m_date)
+        public static void InsertRecords(int m_no, String m_weight, int m_leg, int m_set, DateTime m_date)
         {
             //データベースに接続する
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
@@ -46,6 +46,35 @@ namespace MuscleTrainingRecords00
                 }
             }
         }
+
+        //------------------------Insert文的なの--------------------------
+        /*public static void insertRecords(string name)
+        {
+            //データベースに接続
+            using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
+            {
+
+                try
+                {
+                    //データベースにUserテーブルを作成します
+                    db.CreateTable<RecordsModel>();
+
+                    //Userテーブルに行追加します
+                    db.Insert(new RecordsModel() { Name = name });
+
+                    db.Commit();
+
+                }
+                catch (Exception e)
+                {
+
+                    db.Rollback();
+                    System.Diagnostics.Debug.WriteLine(e);
+
+                }
+            }
+        }*/
+
 
         /*******************セレクトメソッド**************************************/
         public static List<RecordsModel> SelectFood()
